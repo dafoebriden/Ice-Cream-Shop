@@ -1,7 +1,7 @@
 
 
 
-const iceCream = [
+const iceCreams = [
     {
         name: 'Vanilla',
         price: 3,
@@ -198,46 +198,51 @@ const toppings = [
 
 
 function addIceCreamToCart(iceCreamName) {
-    // console.log('Found Ice Cream Name', iceCreamName);
-    const foundIceCream = iceCream.find(iceCream => iceCream.name == iceCreamName)
+    console.log('Found Ice Cream Name', iceCreamName);
+    const foundIceCream = iceCreams.find(iceCream => iceCream.name == iceCreamName)
     console.log('Found Ice Cream', foundIceCream);
     foundIceCream.quantity++
     calculateCartTotal()
+    drawCartList()
 }
 
-function addToppingsToIceCream() { }
+// function addToppingsToIceCream() { }
 
 function calculateCartTotal() {
     let iceCreamTotal = 0
-    iceCream.forEach(iceCream => {
-        if (iceCream.quantity >= 1) {
-            iceCreamTotal += iceCream.price * (iceCream.quantity - 1)
-        }
-        else { console.log() }
-    });
-    let toppingsTotal = 0
-    toppings.forEach(toppings => {
-        toppingsTotal += toppings.price * toppings.quantity
+    let toppingTotal = 0
+    let total = iceCreamTotal + toppingTotal
+
+    iceCreams.forEach(iceCream => {
+        iceCreamTotal += iceCream.price * iceCream.quantity
     })
-    let total = (iceCreamTotal + toppingsTotal)
+
+    toppings.forEach(topping => {
+        toppingTotal += topping.price * topping.quantity
+    })
+
+
+
+    console.log(`Ice Cream Total: ${iceCreamTotal}`)
+    console.log(`Toppings Total: ${toppingTotal}`)
     console.log(`Total:$${total}`)
 
-    const cartTotalElement = document.getElementById('total')
+    const cartTotalElement = document.getElementById('cartTotal')
     cartTotalElement.innerText = total.toString()
 }
 
 function drawCartList() {
     let names = ''
 
-    const iceCreamWithQuantity = iceCream.filter(iceCream => iceCream.quantity > 0)
-    console.log('filtered Ice Cream:', iceCreamWithQuantity);
+    const iceCreamsWithQuantity = iceCreams.filter(iceCream => iceCream.quantity > 0)
+    console.log('filtered Ice Cream:', iceCreamsWithQuantity);
 
-    iceCreamWithQuantity.forEach(iceCream => {
+    iceCreamsWithQuantity.forEach(iceCream => {
         names += `<li>${iceCream.name}(${iceCream.quantity})x$${iceCream.price}=$${iceCreamTotal}
-    ${iceCream.toppings}=$${toppingsTotal}<li>`
+    Toppings:${iceCream.toppings}=$${toppingTotal}<li>`
     })
 
-    const cartItemsElement = document.getElementById('cartItems')
+    const cartItemsElement = document.getElementById('iceCreams')
     cartItemsElement.innerHTML = names
 
 }
