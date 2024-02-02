@@ -10,159 +10,153 @@ const iceCreams = [
     },
     {
         name: 'Carmel Pecan',
-        price: 0,
+        price: 4.5,
         quantity: 0,
         toppings: []
     },
     {
         name: 'Mint Chip',
-        price: 0,
+        price: 4,
         quantity: 0,
         toppings: []
     },
     {
         name: 'Toasted Almond Fudge',
-        price: 0,
+        price: 5,
         quantity: 0,
         toppings: []
     },
     {
         name: 'Moose Tracks',
-        price: 0,
+        price: 5,
         quantity: 0,
         toppings: []
     },
     {
         name: 'Black Raspberry',
-        price: 0,
+        price: 5.5,
         quantity: 0,
         toppings: []
     },
     {
         name: 'Huckleberry',
-        price: 0,
+        price: 6,
         quantity: 0,
         toppings: []
     },
 
     {
         name: 'Coffee',
-        price: 0,
+        price: 4,
         quantity: 0,
         toppings: []
     },
 
     {
         name: 'Chocolate',
-        price: 0,
+        price: 4,
         quantity: 0,
         toppings: []
     },
     {
         name: 'Cookies-N-Cream',
-        price: 0,
+        price: 3.5,
         quantity: 0,
         toppings: []
     },
     {
         name: 'Strawberry Cheesecake',
-        price: 0,
+        price: 5,
         quantity: 0,
         toppings: []
     },
     {
         name: 'Butter Pecan',
-        price: 0,
+        price: 5,
         quantity: 0,
         toppings: []
     },
     {
         name: 'Delce de Leche',
-        price: 0,
+        price: 5.5,
         quantity: 0,
         toppings: []
     },
     {
         name: 'Pistachio',
-        price: 0,
+        price: 5,
         quantity: 0,
         toppings: []
     },
     {
         name: 'Banana Nut',
-        price: 0,
+        price: 4.5,
         quantity: 0,
         toppings: []
     },
     {
         name: 'Rocky Road',
-        price: 0,
+        price: 4,
         quantity: 0,
         toppings: []
     },
     {
         name: 'Coconut',
-        price: 0,
+        price: 4,
         quantity: 0,
         toppings: []
     },
     {
         name: 'Peach',
-        price: 0,
+        price: 3.5,
         quantity: 0,
         toppings: []
     },
     {
         name: 'Peanut Butter Swirl',
-        price: 0,
+        price: 4,
         quantity: 0,
         toppings: []
     },
     {
         name: 'Strawberry',
-        price: 0,
+        price: 4,
         quantity: 0,
         toppings: []
     },
     {
         name: 'Lemon',
-        price: 0,
+        price: 4.5,
         quantity: 0,
         toppings: []
     },
     {
         name: 'Key Lime',
-        price: 0,
+        price: 5,
         quantity: 0,
         toppings: []
     },
     {
         name: 'Cookie-Dough',
-        price: 0,
+        price: 4,
         quantity: 0,
         toppings: []
     },
     {
         name: 'Cherry',
-        price: 0,
+        price: 4.5,
         quantity: 0,
         toppings: []
     },
     {
         name: 'Birthday-Cake',
-        price: 0,
+        price: 3,
         quantity: 0,
         toppings: []
     },
     {
         name: 'Bubblegum',
-        price: 0,
-        quantity: 0,
-        toppings: []
-    },
-    {
-        name: '',
-        price: 0,
+        price: 3,
         quantity: 0,
         toppings: []
     },
@@ -175,23 +169,23 @@ const toppings = [
         quantity: 0
     },
     {
-        name: 'Gummy-Bears',
-        price: .50,
+        name: 'Gummy Bears',
+        price: .60,
         quantity: 0
     },
     {
-        name: '',
-        price: 0,
+        name: 'Chocolate Syrup',
+        price: .45,
         quantity: 0
     },
     {
-        name: '',
-        price: 0,
+        name: 'Sour Gummy Worms',
+        price: .75,
         quantity: 0
     },
     {
-        name: '',
-        price: 0,
+        name: 'Whipped Cream',
+        price: .25,
         quantity: 0
     },
 ]
